@@ -1,0 +1,325 @@
+Section 1: Basics
+Q1
+
+Input a number and check whether it is:
+
+Prime
+Palindrome
+Armstrong
+
+using separate functions.
+
+Q2
+
+Print:
+
+1
+12
+123
+1234
+12345
+1234
+123
+12
+1
+
+using nested loops.
+
+Q3
+
+Input N numbers and find:
+
+Largest
+Second Largest
+Smallest
+Second Smallest
+
+without sorting.
+
+Section 2: Arrays
+Q4
+
+Input N numbers.
+
+Create:
+
+Even array
+Odd array
+
+Display both and count their elements.
+
+Q5
+
+Input a square matrix.
+
+Find:
+
+Primary diagonal sum
+Secondary diagonal sum
+Difference
+Q6
+
+Matrix multiplication.
+
+Validate dimensions before multiplying.
+
+Section 3: Strings
+Q7
+
+Without using built-in functions:
+
+Input a sentence.
+
+Find:
+
+Length
+Number of vowels
+Number of consonants
+Number of spaces
+Q8
+
+Remove duplicate characters.
+
+programming
+
+Output:
+
+progamin
+Q9
+
+Toggle case manually using ASCII.
+
+HeLLo
+
+Output:
+
+hEllO
+Section 4: Functions & Recursion
+Q10
+
+Recursive function for:
+
+sumDigits(2457)
+
+Output:
+
+18
+Q11
+
+Recursive power function:
+
+power(2,5)
+
+Output:
+
+32
+Q12
+
+Create function:
+
+bool isPrime(int n);
+
+Print primes from 1–100.
+
+Section 5: Classes & Objects
+Q13
+
+Create Student class.
+
+Data:
+
+RollNo
+Name
+5 marks
+
+Functions:
+
+getData()
+calculate()
+display()
+
+Find:
+
+Total
+Average
+Grade
+Q14
+
+Demonstrate:
+
+Default constructor
+Parameterized constructor
+Copy constructor
+Destructor
+
+in one program.
+
+Q15
+
+Create Person class.
+
+Use:
+
+static int maleCount;
+static int femaleCount;
+
+Create array of objects and count genders.
+
+Section 6: Function Overloading
+Q16
+
+Create class Calculator.
+
+Overload:
+
+area(radius)
+area(length,breadth)
+area(base,height,int)
+area(side)
+
+for:
+
+Circle
+Rectangle
+Triangle
+Square
+Q17
+
+Create class Volume.
+
+Overload:
+
+volume(side)
+volume(radius)
+volume(radius,height)
+volume(length,width,height)
+
+for:
+
+Cube
+Sphere
+Cone
+Cuboid
+Section 7: Inheritance
+Q18
+
+Employee → Salary
+
+Calculate:
+
+HRA
+DA
+PF
+Bonus
+Net Salary
+
+Show constructor/destructor order.
+
+Q19
+
+Student → Marks → Result
+
+(Multilevel inheritance)
+
+Calculate:
+
+Total
+Average
+Grade
+Q20
+
+Vehicle base class
+
+Derived:
+
+Car
+Bike
+
+Demonstrate hierarchical inheritance.
+
+Section 8: Polymorphism
+Q21
+
+Create:
+
+class Bank
+
+with
+
+virtual double calculateInterest();
+
+Derived:
+
+SavingsAccount
+FixedDeposit
+RecurringDeposit
+
+Use:
+
+Bank* b;
+
+and demonstrate runtime polymorphism.
+
+Q22
+
+Create abstract class:
+
+class Shape
+{
+public:
+    virtual void draw() = 0;
+    virtual double area() = 0;
+};
+
+Implement:
+
+Circle
+Rectangle
+Triangle
+Q23
+
+Shopping Discount System
+
+Base:
+
+Product
+
+Derived:
+
+Electronics
+Clothing
+Grocery
+
+Use virtual functions.
+
+Section 9: Viva Questions (Very Important)
+
+You should be able to answer these without coding:
+
+Difference between class and object?
+Constructor vs Destructor?
+Why destructor cannot be overloaded?
+What is inheritance?
+Difference between private/protected/public?
+What is function overloading?
+What is function overriding?
+What is polymorphism?
+What is virtual function?
+What is pure virtual function?
+What is abstract class?
+What is runtime polymorphism?
+What is compile-time polymorphism?
+What is static member?
+Difference between pointer and reference?
+Meaning of:
+int* p = &x;
+Meaning of:
+Bank* b = &fd;
+Difference between:
+.
+
+and
+
+->
+Constructor execution order in inheritance?
+Destructor execution order in inheritance?
