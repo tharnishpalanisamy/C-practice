@@ -22,3 +22,4 @@ int main(){
     cout<<isPrime(41) ; 
     return 0 ; 
 }
+//prime number
