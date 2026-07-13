@@ -2,25 +2,32 @@
 // A Duck Number is a number that contains at least one zero, but the zero should not be the leading digit.
 
  
-#include<iostream> 
-using namespace std ; 
+#include <iostream>
+#include <string>
+using namespace std;
 
-bool duckNumber(int n) {
-    if (n % 10 == 0) {
-        return false ; 
+int main() {
+    string num;
+    cout << "Enter a number: ";
+    cin >> num;
+    if (num[0] == '0') {
+        cout << num << " is not a Duck Number.";
+        return 0;
     }
-    int temp = n ; 
-    while(temp > 0 ) {
-        int digit = temp % 10 ; 
-        if (digit == 0)  {
-            return true ; 
+
+    bool isDuck = false;
+
+    for (int i = 1; i < num.length(); i++) {
+        if (num[i] == '0') {
+            isDuck = true;
+            break;
         }
     }
-    return false ; 
 
-}
+    if (isDuck)
+        cout << num << " is a Duck Number.";
+    else
+        cout << num << " is not a Duck Number.";
 
-int main(){
-    cout<<duckNumber(91) ; 
-    return 0 ; 
+    return 0;
 }
