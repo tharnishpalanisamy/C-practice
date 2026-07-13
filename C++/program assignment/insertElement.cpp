@@ -10,7 +10,7 @@ int main()
 
     int arr[100];
 
-    cout << "Enter the elements:\n";
+    cout << "Enter the elements:";
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
@@ -30,13 +30,11 @@ int main()
         return 0;
     }
 
-    // Shift elements to the right
     for (int i = n; i >= position; i--)
     {
         arr[i] = arr[i - 1];
     }
 
-    // Insert the new element
     arr[position - 1] = element;
     n++;
 

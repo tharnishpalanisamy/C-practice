@@ -1,3 +1,58 @@
+#include<iostream>
+#include<cmath> 
+using namespace std  ; 
+
+int factorial(int n) {
+    int fact = 1 ; 
+    for (int i = 2 ; i <= n ; i++){
+        fact *= i ; 
+    }
+    return fact ; 
+}
+
+double sinSeries(double radian , int n ) {
+    int sign = 1 ; 
+    double sum = 0 ; 
+    int val = 0 ;
+    for (int i = 1 ; i <= n ; i++  ) { 
+        val = (i*2) - 1 ; 
+        sum += sign * (pow(radian,val) / factorial(val));
+        sign *= -1 ; 
+    }
+    return sum ; 
+    
+}
+
+double cosSeries(double radian , int n) {
+    double sum = 1 ; 
+    int sign = -1 ; 
+    
+    for(int i = 1; i < n ; i++) {
+        int val = i * 2 ; 
+        sum += sign * (pow(radian , val) / factorial(val)) ;
+        sign *= -1 ;
+    }
+    return sum ; 
+}
+
+int main(){
+    double x = 30 ; 
+    x = x * 3.14 / 180 ; 
+    cout<<sinSeries(x,4)<<endl;
+    cout<<cosSeries(x,4) ; 
+    
+    return 0 ; 
+}
+
+
+
+
+
+
+
+
+
+
 #include <iostream>
 using namespace std;
 
@@ -44,7 +99,6 @@ int main()
     switch (choice)
     {
         case 1:
-            // sin(x) = x - x^3/3! + x^5/5! - ...
             for (int i = 0; i < terms; i++)
             {
                 double term = power(x, 2 * i + 1) / factorial(2 * i + 1);
@@ -59,7 +113,6 @@ int main()
             break;
 
         case 2:
-            // cos(x) = 1 - x^2/2! + x^4/4! - ...
             for (int i = 0; i < terms; i++)
             {
                 double term = power(x, 2 * i) / factorial(2 * i);

@@ -30,11 +30,10 @@ int main()
         if (position < 1 || position > n)
         {
             cout << "Invalid position!\n";
-            k--; // Ask again
+            k--; 
             continue;
         }
 
-        // Shift elements to the left
         for (int i = position - 1; i < n - 1; i++)
         {
             arr[i] = arr[i + 1];
@@ -49,5 +48,56 @@ int main()
         cout << arr[i] << " ";
     }
 
+    return 0;
+}
+
+
+
+
+
+//2nd way
+#include<iostream>
+#include<set>
+
+using namespace std;
+
+int main(){
+    int arr[100];
+    int n;
+    
+    cout << "Enter no of elements : " << endl;
+    cin >> n;
+    
+    for (int i = 0; i < n; i++){
+        cout << "Enter element " << i + 1 << ":";
+        cin >> arr[i];
+    }
+    
+    int deletions;
+    cout << "Enter no of elements to delete : ";
+    cin >> deletions;
+    
+    set<int> deleteSet;
+    for(int i = 0; i < deletions; i++) {
+        int el;
+        cout << "Enter positions to delete elements " << i + 1 << " : ";
+        cin >> el;
+        deleteSet.insert(el);
+    }
+    
+    int res[100];
+    int pos = 0;
+    
+    for(int i = 0; i < n; i++){
+        if (deleteSet.count(i) == 0) {
+            res[pos++] = arr[i];
+        }
+    }
+    
+    cout << "Result after deleting " << endl;
+    for(int i = 0; i < pos; i++) {
+        cout << res[i] << " ";
+    }
+    
     return 0;
 }
