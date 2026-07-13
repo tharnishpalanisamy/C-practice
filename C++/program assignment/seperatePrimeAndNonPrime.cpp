@@ -37,11 +37,11 @@ int main()
             nonPrime[np++] = arr[i];
     }
 
-    cout << "\nPrime Numbers: ";
+    cout << "Prime Numbers: ";
     for (int i = 0; i < p; i++)
         cout << prime[i] << " ";
 
-    cout << "\nNon-Prime Numbers: ";
+    cout << "Non Prime Numbers: ";
     for (int i = 0; i < np; i++)
         cout << nonPrime[i] << " ";
 
