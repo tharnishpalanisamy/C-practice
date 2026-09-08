@@ -1,0 +1,22 @@
+#include<iostream> 
+using namespace std ; 
+
+bool isPrime(int n ) {
+    if ( n <=1 ) {
+        return false ; 
+    }
+    if(n ==2 ) {
+        return true ; 
+    }
+    for(int i = 2 ; i * i < n ; i ++) {
+        if ( n % 1 == 0 ) {
+            return false ; 
+        }
+    }
+    return true ; 
+}
+
+int main(){ 
+    cout<< isPrime(142) ;
+    return 0 ; 
+}
